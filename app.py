@@ -5,6 +5,12 @@ import base64
 import streamlit as st
 from pycaret.anomaly import *
 
+# Page info
+st.set_page_config(
+        page_title="Data Insight",
+        page_icon="https://image.flaticon.com/icons/png/512/4149/4149701.png",
+        layout="wide",
+    )
 
 # Web App Title
 st.markdown('''
