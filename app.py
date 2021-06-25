@@ -3,15 +3,14 @@ import io
 import os
 import base64
 import streamlit as st
-from pandas_profiling import ProfileReport
 from pycaret.anomaly import *
 
 
 # Web App Title
 st.markdown('''
-# **The EDA App**
+# **The Data Insight App**
 
-This is the **Anomaly detection app** created in Streamlit using the **Pycaret** library.
+This is the **Anomaly detection app** created in Streamlit using the **PyCaret** library.
 
 ---
 ''')
@@ -41,6 +40,7 @@ if uploaded_file is not None:
     st.write('---')
     st.header('**Data contains Anomaly**')
     st.write(anomaly.head(10))
+    st.text(f"Total {anomaly.shape[0]} anomalies found")
 
     towrite = io.BytesIO()
     downloaded_file = anomaly.to_excel(towrite, encoding='utf-8', index=False, header=True)
