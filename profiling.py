@@ -6,12 +6,17 @@ from streamlit_pandas_profiling import st_profile_report
 
 # Web App Title
 def app():
+
+
+    # Web App Title
     st.markdown('''
-    # **The Data Insight App**
-    
-    This is the **Data profiling app** created in Streamlit using the **pandas-profiling** library.
-    ---
-    ''')
+        # **The Data Insight App**
+
+        This is the ***Data profiling app*** created in Streamlit using the ***pandas-profiling*** library.
+
+        ---
+        ''')
+
     # Upload CSV data
     with st.sidebar.header('1. Upload your CSV data'):
         uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv", "xlsx", "xls"])

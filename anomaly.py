@@ -11,7 +11,7 @@ def app():
     st.markdown('''
     # **The Data Insight App**
     
-    This is the **Anomaly detection app** created in Streamlit using the **PyCaret** library.
+    This is the ***Anomaly detection app*** created in Streamlit using the ***PyCaret*** library.
     
     ---
     ''')
