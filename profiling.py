@@ -12,7 +12,7 @@ def app():
     st.markdown('''
         # **The Data Insight App**
 
-        This is the ***Data profiling app*** created in Streamlit using the ***pandas-profiling*** library.
+        This is the ***Data profiling app*** helps you to understand new data better.
 
         ---
         ''')
